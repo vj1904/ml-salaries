@@ -8,7 +8,7 @@ export interface SalaryData {
 
 export const fetchMLData = async (): Promise<SalaryData[]> => {
   try {
-    const response = await axios.get("http://localhost:5000/api/kaggle-data", {
+    const response = await axios.get("https://backend-assignment-pyhs.onrender.com/api/kaggle-data", {
       responseType: "json",
     });
 
